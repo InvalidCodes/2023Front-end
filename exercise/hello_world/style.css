@@ -1,0 +1,113 @@
+p{
+    color: antiquewhite;
+    font-size: small;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+h3{
+    color: aquamarine;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: overline;
+}
+
+.t1, .t2, .t3{
+    color: bisque;
+    font-size: small;  
+}
+
+#text{
+    color: brown;
+    font-size: small;
+    text-transform: uppercase;
+    text-indent: 30px;
+}
+
+table{
+    border: 1px solid red;
+}
+
+ul>li{
+    color: blue;
+}
+
+.container{
+    width: 1000px;
+    height: 1000px;
+    background-color: #555;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+}
+
+.container::after{
+    content: none;
+    display: block;
+    clear: both;
+}
+
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: azure;
+    padding: 50px 100px;
+    border: 5px solid greenyellow;
+    flex: 3;
+    margin: 0 auto;
+}
+
+.box2{
+    width: 1000px;
+    height: 1000px;
+    background-image: url(fig1.png);
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+    flex: 2;
+    float: inherit;
+    border-radius: 100px;
+}
+
+.box3{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(217, 244, 244);
+    padding: 50px 100px;
+    border: 5px solid greenyellow;
+    margin: 0 auto;
+    border-radius: 100%;
+}
+
+.div2{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(215, 189, 239);
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    box-shadow: 10px 10px 100px #555;
+    opacity: 0.9;
+    animation: myanim 2s ease-in-out 0s 2;
+}
+
+.div2:hover{
+    animation-play-state: paused;
+}
+
+@keyframes myanim {
+    0%{
+        width: 300px;
+        background-color: rgb(210, 221, 231);
+    }
+    50%{
+        width: 400px;
+        background-color: rgb(190, 229, 229);
+    }
+    100%{
+        width: 200px;
+        background-color: rgb(237, 237, 197);
+    }
+}

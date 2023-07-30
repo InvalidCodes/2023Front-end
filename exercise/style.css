@@ -84,12 +84,13 @@ ul>li{
 .div2{
     width: 200px;
     height: 200px;
-    background-color: blueviolet;
+    background-color: rgb(215, 189, 239);
     position: fixed;
     right: 100px;
     bottom: 100px;
     box-shadow: 10px 10px 100px #555;
-    animation: myanim 5s linear 0s 2;
+    opacity: 0.9;
+    animation: myanim 2s ease-in-out 0s 2;
 }
 
 .div2:hover{
@@ -98,12 +99,15 @@ ul>li{
 
 @keyframes myanim {
     0%{
-        background-color: aliceblue;
+        width: 300px;
+        background-color: rgb(210, 221, 231);
     }
     50%{
-        background-color: azure;
+        width: 400px;
+        background-color: rgb(190, 229, 229);
     }
     100%{
-        background-color: beige;
+        width: 200px;
+        background-color: rgb(237, 237, 197);
     }
 }

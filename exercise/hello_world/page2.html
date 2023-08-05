@@ -1,42 +1,81 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Page</title>
-        <link rel="stylesheet" href="./style.css">
-    </head>
+  <head>
+    <title>Page</title>
+    <meta charset="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-    <body>
-        <div id="table">
-            <ol>
-                <li>The first ordered list item.</li>
-                <li>The second ordered list item.</li>
-            </ol>
-    
-            <ul>
-                <li>The first random list item.</li>
-                <li>The second random list item.</li>
-            </ul>
-    
-            <table>
-                <tr>
-                    <td>0.0</td>
-                    <td>0.1</td>
-                    <td>0.2</td>
-                </tr>
-                <tr>
-                    <td>1.0</td>
-                    <td>1.1</td>
-                    <td>1.2</td>
-                </tr>  
-            </table>
-        </div>
-    
-        <nav></nav>
-        <article>
-            <section></section>
-        </article>
-        <aside></aside>
-        <footer></footer>
-    
-    </body>
+  <body>
+    <div id="table">
+      <ol>
+        <li>The first ordered list item.</li>
+        <li>The second ordered list item.</li>
+      </ol>
+
+      <ul>
+        <li>The first random list item.</li>
+        <li>The second random list item.</li>
+      </ul>
+
+      <table>
+        <tr>
+          <td>0.0</td>
+          <td>0.1</td>
+          <td>0.2</td>
+        </tr>
+        <tr>
+          <td>1.0</td>
+          <td>1.1</td>
+          <td>1.2</td>
+        </tr>
+      </table>
+    </div>
+
+    <nav></nav>
+    <article>
+      <section></section>
+    </article>
+    <aside></aside>
+    <footer></footer>
+
+    <script src="./script.js"></script>
+    <script>
+      console.log(document);
+      if (document.nodeType === 9) {
+        console.log("top node");
+      }
+    </script>
+
+    <div>Get element by tag name1.</div>
+    <div>Get element by tag name2.</div>
+    <p class="text">Get element by tag name.</p>
+    <form name="login"></form>
+    <div id="root">Hihi</div>
+
+    <div class="nav">nav1</div>
+    <div class="nav">nav2</div>
+
+    <script>
+      var divs = document.getElementsByTagName("div")[2];
+      console.log(divs);
+      divs.innerHTML = "HelloWorld";
+      console.log(divs);
+
+      var text = document.getElementsByClassName("text")[0];
+      console.log(text);
+
+      var name = document.getElementsByName("login");
+      console.log(name);
+
+      var root = document.getElementById("root");
+      console.log(root);
+
+      var nav = document.querySelector(".nav");
+      console.log(nav);
+      var navs = document.querySelectorAll(".nav");
+      console.log(navs);
+    </script>
+  </body>
 </html>

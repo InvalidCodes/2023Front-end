@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- 设定文档和浏览器兼容性 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!-- 指定窗口属性值，宽度和缩放比例 -->
+    <title>Responsive Scrollable Simple Login Page</title>
     <link rel="stylesheet" href="login_responsive_simple.css" />
   </head>
   <body>
     <div class="content">
       <div class="login">
-        <a href="" class="banner-box"></a>
+        <div class="banner-box"></div>
         <div class="login-box">
-          <h1>Login</h1>
-          <input type="text" placeholder="Username" />
-          <input type="text" placeholder="Password" />
-          <button class="login-btn">OK</button>
+          <h1>Login</h1> <!-- 用h1写标题 -->
+          <div class="input-box">
+            <label for="username"></label>
+            <input type="text" id="username" name="username" placeholder="Username" required><!-- required:用户必填 -->
+          </div>
+          <div class="input-box">
+            <label for="password"></label>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+          </div>
+          <div>
+            <button class="login-btn">OK</button>
+          </div>
         </div>
       </div>
     </div>

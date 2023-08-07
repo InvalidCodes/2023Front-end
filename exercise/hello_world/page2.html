@@ -56,6 +56,7 @@
 
     <div class="nav">nav1</div>
     <div class="nav">nav2</div>
+    <div class="box" id="rooot">Hi!!!</div>
 
     <script>
       var divs = document.getElementsByTagName("div")[2];
@@ -76,6 +77,15 @@
       console.log(nav);
       var navs = document.querySelectorAll(".nav");
       console.log(navs);
+
+      var text = document.createElement("p");
+      var content = document.createTextNode("I'm the text");
+      var id = document.createAttribute("node");
+      id.value = "root";
+      var root = document.getElementById("rooot");
+      root.id="roots";
+
+      console.log(root.className);
     </script>
   </body>
 </html>

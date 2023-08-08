@@ -1,0 +1,33 @@
+/* css for index.html */
+
+:root{
+    --small-radius:30px;
+    --grey:#eee;
+    --black:rgb(0,0,0);
+    --white:#fdfdfd;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    align-items: center; /* top-bottom align */
+    justify-content: center;/* left-right align */
+    /* padding: 1rem; */
+    background-color: var(--grey);
+}
+
+.calculator-box{
+    display: flex;
+    flex-direction:row;
+    /* If the parent container's width is greater than 50rem, the element's width is 50rem.
+    If ... less than 50rem, ... equals to 50rem. */
+    min-width: min(100%,50rem);
+    padding: 4rem;
+    border-radius: var(--small-radius) --small-radius;
+    background-color: var(--white);
+    box-shadow: 0 0 10px -5px var(--black);
+}
+
+.input-form{
+    padding: 1rem;
+}

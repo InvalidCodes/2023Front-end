@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="home/iconfont.css" />
     <script src="http://code.jquery.com/jquery1.2.1.min.js"></script>
+    <script src="./script.js"></script>
   </head>
 
   <body>
     <span class="iconfont icon-Homehomepagemenu home"></span>
 
-    <div class="container">
+    <div class="container" id="container">
       <div id="header" class="box1">
         <p class="t1">I'm a paragraph label.</p>
         <em style="color: blueviolet">Hello!</em>
@@ -35,5 +36,11 @@
       <img src="fig1.png" alt="There should be a picture here." width="300" />
       <a href="./page2.html">Press me to enter the next page!</a>
     </div>
+
+    <script>
+      // 获取元素位置
+      var box=document.getElementById("header");
+      console.log(box.clientHeight,box.clientWidth);
+    </script>
   </body>
 </html>

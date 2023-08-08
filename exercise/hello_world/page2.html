@@ -5,6 +5,7 @@
     <meta charset="en" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
   </head>
 
   <body>
@@ -40,14 +41,6 @@
     <aside></aside>
     <footer></footer>
 
-    <script src="./script.js"></script>
-    <script>
-      console.log(document);
-      if (document.nodeType === 9) {
-        console.log("top node");
-      }
-    </script>
-
     <div>Get element by tag name1.</div>
     <div>Get element by tag name2.</div>
     <p class="text">Get element by tag name.</p>
@@ -57,35 +50,5 @@
     <div class="nav">nav1</div>
     <div class="nav">nav2</div>
     <div class="box" id="rooot">Hi!!!</div>
-
-    <script>
-      var divs = document.getElementsByTagName("div")[2];
-      console.log(divs);
-      divs.innerHTML = "HelloWorld";
-      console.log(divs);
-
-      var text = document.getElementsByClassName("text")[0];
-      console.log(text);
-
-      var name = document.getElementsByName("login");
-      console.log(name);
-
-      var root = document.getElementById("root");
-      console.log(root);
-
-      var nav = document.querySelector(".nav");
-      console.log(nav);
-      var navs = document.querySelectorAll(".nav");
-      console.log(navs);
-
-      var text = document.createElement("p");
-      var content = document.createTextNode("I'm the text");
-      var id = document.createAttribute("node");
-      id.value = "root";
-      var root = document.getElementById("rooot");
-      root.id="roots";
-
-      console.log(root.className);
-    </script>
   </body>
 </html>

@@ -1,9 +1,37 @@
 // 关注点分离，指html页面设计和javascript页面行为分离
 
 // DOM
-if(document.nodeType===9){//顶层节点
-  console.log("top node");
-}
+// if(document.nodeType===9){//顶层节点
+//   console.log("top node");
+// }
+// var divs = document.getElementsByTagName("div")[2];
+// console.log(divs);
+// divs.innerHTML = "HelloWorld";
+// console.log(divs);
+
+// var text = document.getElementsByClassName("text")[0];
+// console.log(text);
+
+// var name = document.getElementsByName("login");
+// console.log(name);
+
+// var root = document.getElementById("root");
+// console.log(root);
+
+// var nav = document.querySelector(".nav");
+// console.log(nav);
+// var navs = document.querySelectorAll(".nav");
+// console.log(navs);
+
+// var text = document.createElement("p");
+// var content = document.createTextNode("I'm the text");
+// var id = document.createAttribute("node");
+// id.value = "root";
+// var root = document.getElementById("rooot");
+// root.id="roots";
+// console.log(root.className);
+
+
 
 // 对象，键值对形式
 const user = {

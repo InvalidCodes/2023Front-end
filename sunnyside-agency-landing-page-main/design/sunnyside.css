@@ -1,0 +1,53 @@
+.header-text{
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+}
+
+.footer-text{
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(50, 149, 116);
+}
+
+header{
+    background-color:aqua;
+    padding: 2rem;
+}
+
+header-wrap{
+    text-align: right;
+    padding: 3rem;
+}
+
+main{
+    background-color: rgb(230, 240, 240);
+}
+
+.cover{
+    background-color: aqua;
+    color: aliceblue;
+    text-align: center;
+    padding: 20rem;
+}
+
+.part1{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    padding: 5rem;
+}
+
+.client{
+    background-color: bisque;
+    text-align: center;
+    padding: 10rem;
+}
+
+footer{
+    background-color:aquamarine;
+    color: aliceblue;
+    text-align: center;
+    padding: 2rem;
+}

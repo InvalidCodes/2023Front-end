@@ -2,6 +2,7 @@
   --banner_height: 60px;
   --title_font_size: 70px;
   --learn_more_font_size: 30px;
+  --banner_top_margin:30px;
   --subtitle_font_size: 50px;
 }
 
@@ -18,14 +19,15 @@
 .banner{
   width: 100%;
   height: var(--banner_height);
+  margin-top: var(--banner_top_margin);
 }
 
 .logo {
   float: left;
-  width: 800px;
+  width: 80%;
   height: var(--banner_height);
   margin-left: 40px;
-  margin-top: 30px;
+  margin-top: var(--banner_top_margin);
 }
 
 .text-wrap {

@@ -1,53 +1,264 @@
-.header-text{
-    font-size: medium;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: aliceblue;
+:root {
+  --banner_height: 60px;
+  --title_font_size: 70px;
+  --learn_more_font_size: 30px;
+  --subtitle_font_size: 50px;
 }
 
-.footer-text{
-    font-size: medium;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(50, 149, 116);
+.header {
+  display: flex;
+  width: 100%;
+  height: 1000px;
+  background: url(/images/desktop/image-header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-header{
-    background-color:aqua;
-    padding: 2rem;
+.banner{
+  width: 100%;
+  height: var(--banner_height);
 }
 
-header-wrap{
-    text-align: right;
-    padding: 3rem;
+.logo {
+  float: left;
+  width: 800px;
+  height: var(--banner_height);
+  margin-left: 40px;
+  margin-top: 30px;
 }
 
-main{
-    background-color: rgb(230, 240, 240);
+.text-wrap {
+  display: flex;
+  float: left;
+  width: 1px;
+  height: var(--banner_height);
+  margin-top: 20px;
+  gap: 100px;
 }
 
-.cover{
-    background-color: aqua;
-    color: aliceblue;
-    text-align: center;
-    padding: 20rem;
+.header-text {
+  font-size: medium;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: aliceblue;
+  margin-top: 1rem;
+  cursor: pointer;
 }
 
-.part1{
-    background-color: antiquewhite;
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-    padding: 5rem;
+.contact {
+  display: flex;
+  width: 150px;
+  height: var(--banner_height);
+  border-radius: 25px;
+  background-color: white;
+  border-color: white;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
 }
 
-.client{
-    background-color: bisque;
-    text-align: center;
-    padding: 10rem;
+.adv {
+  width: 100%;
+  height: auto;
+  align-items: center;
+  margin-top: 100px;
 }
 
-footer{
-    background-color:aquamarine;
-    color: aliceblue;
-    text-align: center;
-    padding: 2rem;
+.adv-text {
+  font-size: 100px;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  font-weight: 2000;
+  letter-spacing: 0.5rem;
+}
+
+.arrow {
+  display: flex;
+  width: 40px;
+  height: 200px;
+}
+
+.cover {
+  width: 100%;
+  height: 100px;
+  background-color: aqua;
+  color: aliceblue;
+  text-align: center;
+}
+
+.cover-img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+}
+
+.part-transform {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row; */
+  justify-content: space-between;
+}
+
+.transform-wrap {
+  width: 50%;
+  height: auto;
+}
+
+.title-text {
+  font-size: var(--title_font_size);
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 1000;
+  padding: 100px 300px 0 100px;
+}
+
+.content-text {
+  font-size: 20px;
+  margin-right: 200px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 0 0 0 100px;
+}
+
+.learn-more-text {
+  font-size: var(--learn_more_font_size);
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: underline rgba(255, 255, 0, 0.5) 5px;
+  padding: 50px 0 200px 130px;
+}
+
+.transform-pic {
+  width: 50%;
+  height: auto;
+  background: url(/images/desktop/image-transform.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.stand-pic {
+  width: 50%;
+  height: auto;
+  background: url(/images/desktop/image-stand-out.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.double-left {
+  width: 50%;
+  height: auto;
+  background: url(/images/desktop/image-graphic-design.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.double-right {
+  width: 50%;
+  max-width: 50%;
+  height: auto;
+  background: url(/images/desktop/image-photography.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.double-wrap {
+  background-color: white;
+  width: 100px;
+  height: auto;
+}
+
+.sub-title {
+  font-size: var(--subtitle_font_size);
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  margin-top: 700px;
+}
+
+.content-mid {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 2;
+  text-align: center;
+  padding: 0 200px 50px 200px;
+}
+
+.client {
+  height: auto;
+  background-color: white;
+}
+
+.client-title-text {
+  font-size: var(--subtitle_font_size);
+  font-weight: 100;
+  letter-spacing: 1rem;
+  text-align: center;
+  padding: 100px 0 100px 0;
+}
+
+.client-wrap {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.client-member {
+  width: 100%;
+  padding: 0 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.client-photo {
+  border-radius: 100%;
+}
+
+.content-client {
+  padding: 4rem 4rem;
+}
+
+.client-name {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+footer {
+  background: url(/images/desktop/image-graphic-design.jpg);
+  background-size: cover;
+  background-position: bottom;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.footer-text-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-text {
+  padding: 1rem 4rem;
+  cursor: pointer;
+}
+
+.footer-icon-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.footer-icon {
+  padding: 0 1rem;
+  cursor: pointer;
 }

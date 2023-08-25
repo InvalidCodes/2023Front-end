@@ -1,0 +1,63 @@
+@media screen and (max-width:600px) {
+    .text-wrap{
+        display: none;
+    }
+
+    .part-transform{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .transform-wrap{
+        width: 100%;
+        height: auto;
+    }
+
+    .title-text{
+        text-align: center;
+        padding: 0 40px;
+    }
+
+    .content-text{
+        text-align: center;
+        margin-right: 0;
+        padding: 0 40px;
+    }
+
+    .learn-more-text{
+        text-align: center;
+        padding: 50px;
+    }
+
+    .transform-pic{
+        width: 100%;
+        height: auto;
+    }
+
+    .double-left{
+        width: 100%;
+        height: auto;
+    }
+
+    .double-right{
+        width: 100%;
+        height: auto;
+    }
+
+    .content-mid{
+        padding: 2rem;
+    }
+
+    .content-client{
+        padding: 1rem;
+    }
+
+    .client-wrap{
+        flex-direction: column;
+    }
+
+    .client-member{
+        padding: 2rem;
+    }
+}

@@ -2,29 +2,31 @@
   --banner_height: 60px;
   --title_font_size: 70px;
   --learn_more_font_size: 30px;
-  --banner_top_margin:30px;
+  --banner_top_margin: 30px;
   --subtitle_font_size: 50px;
+  --common_height: 100px;
 }
 
-.header {
+.landing-page {
   display: flex;
   width: 100%;
-  height: 1000px;
+  height: 100vh;
   background: url(/images/desktop/image-header.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.banner{
+.primary-nav {
   width: 100%;
   height: var(--banner_height);
   margin-top: var(--banner_top_margin);
+  position: absolute;
 }
 
 .logo {
   float: left;
-  width: 80%;
+  width: 60%;
   height: var(--banner_height);
   margin-left: 40px;
   margin-top: var(--banner_top_margin);
@@ -36,7 +38,7 @@
   width: 1px;
   height: var(--banner_height);
   margin-top: 20px;
-  gap: 100px;
+  gap: var(--common_height);
 }
 
 .header-text {
@@ -49,7 +51,7 @@
 
 .contact {
   display: flex;
-  width: 150px;
+  width: 200px;
   height: var(--banner_height);
   border-radius: 25px;
   background-color: white;
@@ -65,12 +67,13 @@
 .adv {
   width: 100%;
   height: auto;
+  text-align: center;
   align-items: center;
-  margin-top: 100px;
+  margin-top: var(--common_height);
 }
 
 .adv-text {
-  font-size: 100px;
+  font-size: var(--common_height);
   font-family: "Times New Roman", Times, serif;
   color: white;
   font-weight: 2000;
@@ -78,14 +81,13 @@
 }
 
 .arrow {
-  display: flex;
   width: 40px;
-  height: 200px;
+  height: 150px;
 }
 
 .cover {
   width: 100%;
-  height: 100px;
+  height: var(--common_height);
   background-color: aqua;
   color: aliceblue;
   text-align: center;
@@ -101,7 +103,7 @@
   width: 100%;
   height: auto;
   display: flex;
-  flex-direction: row; */
+  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -161,7 +163,6 @@
 
 .double-right {
   width: 50%;
-  max-width: 50%;
   height: auto;
   background: url(/images/desktop/image-photography.jpg);
   background-size: cover;
@@ -171,7 +172,7 @@
 
 .double-wrap {
   background-color: white;
-  width: 100px;
+  width: var(--common_height);
   height: auto;
 }
 
@@ -205,7 +206,7 @@
 
 .client-wrap {
   width: 100%;
-  height: 500px;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -230,6 +231,7 @@
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
   font-weight: bold;
+  padding: 0 0 5rem 0;
 }
 
 footer {
@@ -249,7 +251,7 @@ footer {
 }
 
 .footer-text {
-  padding: 1rem 4rem;
+  padding: 3rem 2rem;
   cursor: pointer;
 }
 

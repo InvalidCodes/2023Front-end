@@ -3,31 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/favicon-32x32.png" />
     <link rel="stylesheet" href="desktop.css" />
-    <link rel="stylesheet" href="mobile.css">
-    <title>sunnyside</title>
+    <script src="sunnyside.js"></script>
+    <title>Sunnyside agency landing page</title>
   </head>
 
   <body>
-    <div class="landing-page">
-      <nav class="primary-nav">
-        <div class="logo">
-          <img src="/images/logo.svg" alt="logo-header" />
-        </div>
-        <div class="text-wrap">
-          <div class="header-text">About</div>
-          <div class="header-text">Services</div>
-          <div class="header-text">Products</div>
-          <button class="contact">CONTACT</button>
-        </div>
+    <header>
+      <nav class="nav">
+        <a href="#" class="nav-logo">
+          <!-- jump to logo when click -->
+          <img src="/images/logo.svg" alt="sunnyside logo" />
+        </a>
+        <label onclick="toggleNav()"
+          ><img
+            src="/images/icon-hamburger.svg"
+            alt="expanded navigator"
+            class="nav-toggle"
+        /></label>
+        <ul id="nav-menu-list">
+          <li class="nav-menu-list-item"><a href="#">About</a></li>
+          <li class="nav-menu-list-item"><a href="#">Services</a></li>
+          <li class="nav-menu-list-item"><a href="#">Projects</a></li>
+          <li class="nav-menu-list-item">
+            <a href="#" class="nav-menu-list-item-contact">Contact</a>
+          </li>
+        </ul>
       </nav>
-      <div class="adv">
-        <p class="adv-text">WE ARE CREATIVES</p>
-        <img src="/images/icon-arrow-down.svg" alt="arrow" class="arrow" />
-      </div>
-    </div>
+    </header>
 
     <main>
+      <section class="landing">
+        <div class="landing-img-container">
+          <div class="landing-content-container">
+            <h1>we are creatives</h1>
+          </div>
+        </div>
+      </section>
+
       <div class="part-transform">
         <div class="transform-wrap">
           <p class="title-text">Transform your brand</p>

@@ -1,8 +1,4 @@
 @media screen and (max-width:600px) {
-    .text-wrap{
-        display: none;
-    }
-
     .part-transform{
         width: 100%;
         height: auto;
